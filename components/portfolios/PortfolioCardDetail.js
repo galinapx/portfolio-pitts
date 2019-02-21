@@ -14,12 +14,9 @@ class PortfolioCardDetail extends React.Component {
           <ModalHeader toggle={toggle}>{portfolio.title}</ModalHeader>
           <ModalBody>
             <p><b>Description: </b>{portfolio.description}</p>
-            <p><b>Company: </b>{portfolio.company}</p>
-            <p><b>Position: </b>{portfolio.position}</p>
-            <p><b>Location: </b>{portfolio.location}</p>
+            <p><a href={portfolio.url_link} target="_blank">{"Go to "+ portfolio.title} </a></p>
             <p><b>Start Date: </b>{moment(portfolio.startDate).format('MMMM YYYY')}</p>
             <p><b>End Date: </b>{portfolio.endDate ? moment(portfolio.endDate).format('MMMM YYYY') : 'Still Working Here'}</p>
-            <a>link</a>
           </ModalBody>
           <ModalFooter>
             <Button color="secondary" onClick={toggle}>Cancel</Button>

@@ -38,22 +38,19 @@ const PortfolioCreateForm = ({initialValues, onSubmit, error}) => (
                  name="title"
                  label="Title"
                  component={PortInput}/>
-          <Field type="text"
-                 name="company"
-                 label="Company"
-                 component={PortInput}/>
-          <Field type="text"
-                 name="location"
-                 label="Location"
-                 component={PortInput}/>
-          <Field type="text"
-                 name="position"
-                 label="Position"
-                 component={PortInput}/>
           <Field type="textarea"
                  name="description"
                  label="Description"
                  component={PortInput}/>
+          <Field type="text"
+                 name="url_link"
+                 label="URL Link"
+                 component={PortInput}/>
+          <Field type="text"
+                 name="img_link"
+                 label="Image Link"
+                 component={PortInput}/>
+          
 
           <Field name="startDate"
                  label="Start Date"

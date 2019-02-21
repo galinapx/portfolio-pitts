@@ -5,7 +5,7 @@ import Fonts from '../helpers/Fonts';
 
 import auth0 from '../services/auth0';
 
-// Stylings
+// Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/main.scss';
 import 'react-toastify/dist/ReactToastify.css';
@@ -19,10 +19,7 @@ export default class MyApp extends App {
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx)
     }
-    debugger;
-    const x = process.env.NAMESPACE;
-    const y = user;
-    const z = (process.env.NAMESPACE + '/role')
+    
 
     const isSiteOwner = user && user[process.env.NAMESPACE + '/role'] === 'siteOwner';
     

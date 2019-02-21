@@ -29,13 +29,16 @@ export default class PortfolioCard extends React.Component {
         <PortfolioCardDetail toggle={this.handleToggle} portfolio={portfolio} isOpen={isOpen}/>
 
         <Card className="portfolio-card">
-          <CardHeader className="portfolio-card-header">{portfolio.position}</CardHeader>
+         
           <CardBody>
-            <p className="portfolio-card-city">{portfolio.location}</p>
+           
             <CardTitle className="portfolio-card-title">{portfolio.title}</CardTitle>
-            <CardText className="portfolio-card-text">{portfolio.description}</CardText>
-            <h3>pic</h3>
-            <div className="readMore">
+            {/* <CardText className="portfolio-card-text">{portfolio.description}</CardText> */}
+            <CardText className="portfolio-card-text">
+            <img src={portfolio.img_link} alt='alt' width='300' height='300'/>
+            {/* <a href={portfolio.url_link}><img src={portfolio.img_link} alt='alt' width='300' height='300'/></a> */}
+            </CardText>
+            <div className='readMore'>
               {children}
             </div>
           </CardBody>

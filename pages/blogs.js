@@ -82,7 +82,7 @@ class Blogs extends React.Component {
           <footer>
             <Container>
               <Row>
-                {/* //bp  */}
+               
                 <div className="col-lg-8 col-md-10 mx-auto">
                   <ul className="list-inline text-center">
                     <li className="list-inline-item">

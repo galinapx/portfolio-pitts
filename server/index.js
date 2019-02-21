@@ -38,12 +38,6 @@ const secretData = [
   }
 ]
 
-//bp
-// console.log('--------');
-// console.log(config);
-// console.log(config.DB_URI);
-
-
 mongoose.connect(config.DB_URI, { useNewUrlParser: true})
   .then(() => console.log('Database Connected!'))
   .catch(err => console.error(err));

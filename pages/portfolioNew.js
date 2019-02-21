@@ -12,10 +12,9 @@ import { Router } from '../routes';
 import moment from 'moment';
 
 const INITIAL_VALUES = { title: '',
-                         company: '',
-                         location: '',
-                         position: '',
                          description: '',
+                         url_link: '',
+                         img_link: '',
                          startDate: moment(),
                          endDate: moment() };
 
